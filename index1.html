@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline SOS App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Emergency SOS Request</h1>
+    <form id="sosForm">
+        <label for="message">Message:</label>
+        <input type="text" id="message" placeholder="Enter your SOS message" required>
+
+        <label for="location">Your Location (GPS):</label>
+        <input type="text" id="location" placeholder="Enter your GPS coordinates" required>
+
+        <label for="phone">Your Phone Number:</label>
+        <input type="number" id="phone" value="8610502238" readonly>
+
+        <button type="submit">Send SOS</button>
+    </form>
+
+    <div class="response" id="response" style="display:none;"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
